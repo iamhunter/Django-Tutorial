@@ -20,6 +20,6 @@ env:
 
 install:
 - pip install -q Django==$DJANGO_VERSION
-#- python setup.py -q install
-# command to run tests
-script: pytest
+- pip install pq . --use-mirrors
+
+script: python models.py test
