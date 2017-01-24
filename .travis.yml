@@ -13,7 +13,7 @@ python:
 
 env:
   - DJANGO_VERSION=1.10
-  - DJANGO_Version=nightly
+  - DJANGO_Version=dev
 
 install:
 - pip install -q Django==$DJANGO_VERSION
